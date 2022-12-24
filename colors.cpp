@@ -1,0 +1,20 @@
+#include "colors.h"
+
+uint16_t cmap[16] PROGMEM = {
+  TFT_BLACK,
+  TFT_RED,
+  TFT_DARKGREY,
+  TFT_LIGHTGREY,
+  TFT_MAROON,
+  TFT_PURPLE,
+  TFT_PINK,
+  TFT_LIGHTGREY,
+  TFT_YELLOW,
+  TFT_BLUE,
+  TFT_GREEN,
+  TFT_CYAN,
+  TFT_RED,
+  TFT_MAGENTA,
+  TFT_WHITE,
+  TFT_WHITE,
+};
