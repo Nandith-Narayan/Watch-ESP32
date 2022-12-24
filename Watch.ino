@@ -4,7 +4,7 @@
 #include "render.h"
 #include "apple.h"
 
-#define BACKLIGHT_PIN 21
+#define BACKLIGHT_PIN 27
 #define BACKLIGHT_PWN_CHNL 0
 #define BUTTON_1 33
 
@@ -54,13 +54,13 @@ void setup(){
   int apple_frame = 0;
   
 void loop(){
-  //Serial.println(getCpuFrequencyMhz());
+  Serial.println(getCpuFrequencyMhz());
   unsigned long bt = micros();
 
-  /*background.fillSprite(BLACK);
+  background.fillSprite(BLACK);
 
 
-  
+  /*
   drawBatteryLevel();
   drawMinNumbers();
   drawMinTicks();
@@ -74,7 +74,7 @@ void loop(){
   background.setTextColor(WHITE);
   background.drawString(String(hours), 110, 125, 6);
   background.drawString(am_or_pm, 115, 152, 2);*/
-
+  
   int x = 0;
   int y = 0;
   int offset_y = 30;
@@ -105,7 +105,7 @@ void loop(){
   background.pushSprite(0,0);
   //delay(50);
   updateTime();
-  while((micros()-bt)< 33000){}
+  //while((micros()-bt)< 33000){}
 }
 
 void updateTime(){
